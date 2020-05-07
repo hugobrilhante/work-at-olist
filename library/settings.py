@@ -28,6 +28,7 @@ class Base(Configuration):
         'drf_yasg',
 
         # Local apps
+        'library.apps.authors.apps.AuthorsConfig',
         'library.apps.base.apps.BaseConfig',
     ]
 
