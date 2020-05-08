@@ -7,9 +7,12 @@ from rest_framework.authentication import BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.routers import SimpleRouter
 
+from .apps.authors import views as author
 from .apps.base import views as base
 
 routes = SimpleRouter(trailing_slash=True)
+
+routes.register('authors', author.AuthorViewSet, 'author')
 
 api_patterns = [
     path('', include(routes.urls))
