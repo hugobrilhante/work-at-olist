@@ -6,7 +6,11 @@ from .serializers import AuthorSerializer
 
 class AuthorViewSet(viewsets.ReadOnlyModelViewSet):
     """
-    A ViewSet for `viewing` and `search` author.
+    A ViewSet for author.
+
+    Automatically provides `list`, `retrieve` actions.
+
+    Additionally provide the possibility to `search` by `name`.
     """
     queryset = Author.objects.order_by('id')
     serializer_class = AuthorSerializer
