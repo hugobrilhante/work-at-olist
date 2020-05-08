@@ -30,6 +30,7 @@ class Base(Configuration):
         # Local apps
         'library.apps.authors.apps.AuthorsConfig',
         'library.apps.base.apps.BaseConfig',
+        'library.apps.books.apps.BooksConfig',
     ]
 
     MIDDLEWARE = [
