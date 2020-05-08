@@ -1,4 +1,4 @@
-# Library
+# Library Project
 
 Instructions for setting up the project.
 
@@ -28,9 +28,53 @@ make setup
 ```shell script
 make setup: Installs development dependencies, creates database and run project.
 
-make up: Starts project in daemon.
+make up: Start project in daemon.
 
 make stop: Stop project services.
 
 make test: Run tests
 ```
+
+
+## Environment
+
+* Computer: Macbook pro 13'
+* Os: macOS Catalina
+* IDE: PyCharm
+
+## Library
+
+#### Tests and Code Style
+
+* autopep8
+* autoflake
+* flake8
+* isort
+* pytest-django
+* pytest-cov
+* pytest-factoryboy
+
+#### Application and docs
+
+* django 2.2.12 (LTS)
+* django-configurations
+* djangorestframework
+* django-filter
+* drf-yasg
+* gunicorn
+* psycopg2
+* whitenoise
+
+> Note: I used a django template that I made recently to use in my projects [beatsolu/django-templates](https://github.com/beatsolu/django-templates)
+
+
+## Application Example
+
+[https://work-at-olist](https://work-at-olist-hugobrilhante.herokuapp.com/)
+
+#### Credentials
+    login: admin
+    password: admin
+
+
+
