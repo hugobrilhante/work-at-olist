@@ -9,10 +9,12 @@ from rest_framework.routers import SimpleRouter
 
 from .apps.authors import views as author
 from .apps.base import views as base
+from .apps.books import views as book
 
 routes = SimpleRouter(trailing_slash=True)
 
 routes.register('authors', author.AuthorViewSet, 'author')
+routes.register('books', book.BookViewSet, 'book')
 
 api_patterns = [
     path('', include(routes.urls))
